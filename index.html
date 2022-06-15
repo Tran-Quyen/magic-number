@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Number</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title-1">Magic Number</h1>
+      <div class="main">
+        <div class="main-control">
+          <div class="reset-area">
+            <button class="btn-reset">Reset</button>
+          </div>
+          <div class="result"></div>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                placeholder="..."
+                minlength="4"
+                maxlength="4"
+                required
+              />
+              <button type="submit">OK</button>
+            </div>
+          </form>
+        </div>
+        <div class="main-info">
+          <h2 class="title-2">Dãy số</h2>
+          <div class="magic-numbers"></div>
+        </div>
+      </div>
+      <p class="description">Cách chơi:</p>
+      <p class="description">
+        Đầu tiên bạn hãy nhập một số có 4 chữ số bất kỳ. Mình sẽ viết một số dự đoán vào một khu vực
+        khác (bạn có thể click vào để xem trước).
+      </p>
+      <p class="description">
+        Tiếp theo bạn hãy nhập một số gồm 4 chữ số, mình sẽ nhập ngẫu nhiên 4 chữ số phía dưới số
+        của bạn.
+      </p>
+      <p class="description">
+        Làm lại lần nữa, bạn nhập tiếp tục số 4 chữ số, mình sẽ nhập ngẫu nhiên 4 chữ số phía dưới
+        số của bạn.
+      </p>
+      <p class="description">
+        Boom, chúng ta có tổng các dãy số của bạn và mình bằng với con số mà mình đã viết từ trước
+        mặc dầu các con số của bạn và mình đều ngẫu nhiên!
+      </p>
+    </div>
+  </body>
+</html>
+
